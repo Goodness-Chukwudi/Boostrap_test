@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form practice</title>
+</head>
+<body>
+    <form action="">
+       <p>
+            <label >Firstname <input type="textarea"></label>
+       </p>
+       <p>
+            <label >Lastname <input type="textarea"></label>
+       </p>
+       <p>
+        <label>Education completed <input type="text" list="qualification"></label>
+        <datalist id="qualification">
+                <option value="PHD"></option>
+                <option value="MSc"></option>
+                <option value="BSc"></option>
+                <option value="HND"></option>
+                <option value="OND"></option>
+                <option value="A level"></option>
+                <option value="O level"></option>
+                <option value="SSCE"></option>
+        </datalist>
+       </p>
+        <p>
+            <label for=""> Tell us a little about yourself<textarea name="" id="" cols="30" rows="10" placeholder="In less than 500 characters" maxlength="500"></textarea></label>
+        </p>
+        <ul>
+            <li><input checked type="radio" name="level" value="Level 1"></li>
+            <li><input type="radio" name="level" value="Level 2"></li>
+            <li><input type="radio" name="level" value="Level 3"></li>
+            <li><input type="radio" name="level" value="Level 4"></li>
+            <li><input type="radio" name="level" value="Level 5"></li>
+
+        </ul>
+        <ul>
+            <li><input checked type="checkbox" name="year" value="1st year"></li>
+            <li><input type="checkbox" name="year" value="2nd year"></li>
+            <li><input type="checkbox" name="year" value="3rd year"></li>
+            <li><input type="checkbox" name="year" value="4th year"></li>
+            <li><input type="checkbox" name="year" value="5th year"></li>
+        </ul>
+        <p>
+            <label for="select_class">Select class</label>
+            <select name="class" id="select_class" size="3" multiple>
+                <optgroup label="Web Design">
+                    <option value="">HTML</option>
+                    <option value="">CSS</option>
+                    <option value="">Javascript</option>
+                    <option value="">Bootstrap</option>
+                </optgroup>
+                <optgroup label="Web Development">
+                    <option value="">PHP</option>
+                    <option value="">Node js</option>
+                    <option value="">Ruby</option>
+                    <option value="">Python</option>
+                </optgroup>
+                <optgroup label="Java">
+                    <option value="">Beginner</option>
+                    <option value="">Intermediate</option>
+                    <option value="">Advanced</option>
+                    <option value="">Pro</option>
+                </optgroup>
+                <optgroup label="Python">
+                    <option value="">Web script</option>
+                    <option value="">AI</option>
+                    <option value="">Machine learning</option>
+                    <option value="">Deep learning</option>
+                </optgroup>
+            </select>
+        </p>
+
+    </form>
+</body>
+</html>
